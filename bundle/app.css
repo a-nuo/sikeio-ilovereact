@@ -424,7 +424,7 @@ th {
 }
 body, div, span {
 	box-sizing:border-box;
-	postion:relative;
+	position:relative;
 
 	display:-webkit-box;
 
@@ -493,7 +493,7 @@ a:hover {
   text-decoration: none;
 }
 .section {
-  border: 2px solid #FFF;
+  /*border: 2px solid #FFF;*/
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -502,6 +502,11 @@ a:hover {
 .section h1{
 	display: inline-block;
 	text-align:center;
+	position: relative;
+
+}
+.react-logo{
+	position:relative;
 }
 .first{
 	-webkit-box-orient:vertical;
@@ -517,6 +522,21 @@ a:hover {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+
+	/*背景图*/
+	  background-image: url(../img/background.jpg);
+	  background-size: cover;
+	  background-position: center;
+}
+
+.overlay {
+  position:absolute;  
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height:100%;
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(31,30,52,1));
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
 .nav {
@@ -533,6 +553,8 @@ a:hover {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+
+	position: relative;
 }
 .nav a{
 		padding:0 20px;
@@ -563,7 +585,7 @@ a:hover {
 	-webkit-flex-basis:0;
 	    -ms-flex-preferred-size:0;
 	        flex-basis:0;
-	background-color:rgba(255,0,0,0.3);
+	/*background-color:rgba(255,0,0,0.3);*/
 
 
 	-webkit-box-orient:vertical;
@@ -589,6 +611,14 @@ a:hover {
 	        justify-content: center;
 
 }
+.tumblr{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom:0px;
+	margin: auto;
+}
 .feature-description {
 	-webkit-box-flex:1;
 	-webkit-flex-grow:1;
@@ -600,7 +630,7 @@ a:hover {
 	-webkit-flex-basis:0;
 	    -ms-flex-preferred-size:0;
 	        flex-basis:0;
-	background-color: rgba(0,255,0,0.3);
+	/*background-color: rgba(0,255,0,0.3);*/
 
 	
 	-webkit-box-orient:vertical;
@@ -625,6 +655,16 @@ a:hover {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 
+}
+.swype {
+	position:absolute;
+	left: 0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	margin:auto;
+	height: 250px;
+	width: 140px;
 }
 .last{
 	-webkit-box-orient:horizontal;
@@ -640,4 +680,40 @@ a:hover {
 	-webkit-justify-content:center;
 	    -ms-flex-pack:center;
 	        justify-content:center;
+
+	overflow: hidden
+}
+#android-robot{
+	position:absolute;
+	top:84%;
+	left: 98%;
+	-webkit-transform: rotate(-45deg) scale(0.5) translate(-50%,-50%);
+	    -ms-transform: rotate(-45deg) scale(0.5) translate(-50%,-50%);
+	        transform: rotate(-45deg) scale(0.5) translate(-50%,-50%)
+}
+
+#slider-control {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  padding: 3px;
+  -webkit-transform:translate(-100%,-50%);
+      -ms-transform:translate(-100%,-50%);
+          transform:translate(-100%,-50%);
+
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
 }

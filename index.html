@@ -21,29 +21,32 @@
 </head>
 <body>
 <div class="section first">
-	<img class="react-logo" src="img/react-logo.svg"/>
-	<h1>Build Native Apps With React</h1>
-		<div class="nav">
-		<a href="#native" >
-	 		Native iOS
-		</a>
+		<div class="overlay"></div>
+		<img class="react-logo" src="img/react-logo.svg"/>
+		<h1 style="z-index:0;">Build Native Apps With React</h1>
+			<div class="nav">
+			<a href="#native" >
+		 		Native iOS
+			</a>
 
-		<a href="#touch" >
-		  Touch Handling
-		</a>
+			<a href="#touch" >
+			  Touch Handling
+			</a>
 
-		<a href="#async" >
-		  Asynchronous
-		</a>
+			<a href="#async" >
+			  Asynchronous
+			</a>
 
-		<a href="#flex" >
-		  Flex &amp; Styling
-		</a>
-		</div>
+			<a href="#flex" >
+			  Flex &amp; Styling
+			</a>
+			</div>
 </div>
 <div class="section second">
 	<div class="iphone-demo">
-	  <img src="img/iphone-frame.svg"/>
+	  <img src="img/iphone-frame.svg" >
+	  <img src="img/tumblr-demo.jpg" class="tumblr"/>
+	  </img>
 	 </div>
 
 	<div class="feature-description">
@@ -55,22 +58,41 @@
 </div>
 <div class="section">
 	<div class="iphone-demo">
-  <img src="img/iphone-frame.svg"/>
-</div>
+	  <img src="img/iphone-frame.svg"/>
+	  <img class="swype" src="img/swype-demo.jpg"/>
+	</div>
 
-<div class="feature-description">
-  <h2>Touches &amp; Gestures</h2>
-  <p>
-    React Native implements a powerful responder system to
-    negotiate touches in complex view hierarchies. It allows you
-    to build complex UI, and handle user interactions precisely.
-  </p>
-</div>
+	<div class="feature-description">
+	  <h2>Touches &amp; Gestures</h2>
+	  <p>
+	    React Native implements a powerful responder system to
+	    negotiate touches in complex view hierarchies. It allows you
+	    to build complex UI, and handle user interactions precisely.
+	  </p>
+	</div>
 </div>
 <div class="section last">
 	<h1>Android Is Here</h1>
+	<img id="android-robot" src="img/android-robot.svg"/>
 </div>
 
+<div id="slider-control">
+  <a href="#native" class="active">
+    <div class="dot"></div>
+  </a>
+
+  <a href="#touch">
+    <div class="dot"></div>
+  </a>
+
+  <a href="#async">
+    <div class="dot"></div>
+  </a>
+
+  <a href="#flex">
+    <div class="dot"></div>
+  </a>
+</div>
 
 <!-- <script src="js/app.js"></script> -->
 
