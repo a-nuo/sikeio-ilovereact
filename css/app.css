@@ -67,6 +67,18 @@ a:hover {
 }
 .react-logo{
 	position:relative;
+	margin-top:-10%;
+}
+
+@media (max-height:600px){
+
+	h1{
+		font-size:48px;
+	}
+
+	#react-logo{
+		height: 100px;
+	}
 }
 .first{
 	flex-direction:column;
@@ -98,11 +110,21 @@ a:hover {
 .nav a{
 		padding:0 20px;
 }
+
+#iphone-relay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	transform: translateY(-20%);
+	/*background-color: rgba(255,0,0,0.3);*/
+}
 .second{
 	flex-direction:row;
 	align-items:center;
 	justify-content:center;
 }
+
 .iphone-demo {
 	flex-grow:1;
 	align-self:stretch;
@@ -110,6 +132,13 @@ a:hover {
 	/*background-color:rgba(255,0,0,0.3);*/
 
 
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+
+}
+
+.iphone-relay .iphone-demo {
 	flex-direction:column;
 	align-items:center;
 	justify-content: center;
@@ -123,10 +152,28 @@ a:hover {
 	bottom:0px;
 	margin: auto;
 }
+
 .feature-description {
-	flex-grow:1;
-	align-self:stretch;
-	flex-basis:0;
+	position: absolute;
+	width: 50%;
+	top:0;
+	right:0px;
+	height: 100%;
+	/*background-color: rgba(0,255,0,0.3);*/
+
+	
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+
+}
+
+.second .feature-description {
+	position: absolute;
+	width: 50%;
+	top:0;
+	right:0px;
+	height: 100%;
 	/*background-color: rgba(0,255,0,0.3);*/
 
 	
